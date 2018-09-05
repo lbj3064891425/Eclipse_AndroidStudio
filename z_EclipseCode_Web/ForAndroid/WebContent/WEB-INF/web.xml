@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ForAndroid</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.wsh.android.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.wsh.android.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>mainServlet</servlet-name>
+    <servlet-class>com.wsh.android.servlet.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteProductServlet</servlet-name>
+    <servlet-class>com.wsh.android.servlet.DeleteProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>selectProductServlet</servlet-name>
+    <servlet-class>com.wsh.android.servlet.SelectProductServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>updateProductServlet</servlet-name>
+    <servlet-class>com.wsh.android.servlet.UpdateProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mainServlet</servlet-name>
+    <url-pattern>/mainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteProductServlet</servlet-name>
+    <url-pattern>/deleteProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectProductServlet</servlet-name>
+    <url-pattern>/selectProductServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>updateProductServlet</servlet-name>
+    <url-pattern>/updateProductServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+
